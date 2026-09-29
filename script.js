@@ -34,6 +34,19 @@ const MENSAJES = [
     t: "Hoy se celebra a la reina de la casa. Gracias por ser mi mamá, mi ejemplo y mi apoyo incondicional. ¡Te amo muchísimo, que tengas un día hermoso!" 
   }
 ];
+
+const DILEMA = {
+  mananitas: [
+    "🎶 «Estas son las mañanitas que cantaba el Rey David...» Prepárate, ma, porque te las vamos a cantar con todo el corazón (y un poquito desafinados).",
+    "🎂 Cantamos a todo pulmón, se nos fue el aire, pero la intención y el amor valieron cada segundo. ¡Feliz cumple!"
+  ],
+  viva: [
+    "🇲🇽 ¡Viva la cumpleañera! ¡Viva la reina de la casa! Hoy se celebra en grande porque te lo mereces todo, Maaaaaaaaaa.",
+  ],
+  alerta: [
+    "🔔 ¡Alerta sísmica! ¡1, 2, 3, a correr!... ah no, falsa alarma, ¡a correr pero por el pastel antes de que se lo acaben! 😂",
+  ]
+};
 /* ================================ */
 
 document.getElementById("nombre").textContent = NOMBRE;
