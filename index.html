@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1f2b">
+<title>¡Feliz cumpleaños, Maaaaa! 🎂</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="locked">
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<div id="sobre" class="sobre-wrap">
+  <p class="sobre-top">Para ti, <span id="nombreSobre">Mami</span> 💌</p>
+  <button id="sobreBtn" class="sobre" aria-label="Abrir el sobre">
+    <span class="sobre-back"></span>
+    <span class="carta"><span>¡Feliz<br>cumpleaños!</span></span>
+    <span class="sobre-front"></span>
+    <span class="solapa"></span>
+    <span class="sello">❤</span>
+  </button>
+  <p class="sobre-hint">Toca el sobre para abrirlo</p>
+</div>
+
+<button id="musicBtn" class="music" aria-pressed="false" aria-label="Activar música">
+  <span class="music-icon" aria-hidden="true">🎺</span>
+  <span class="music-text">Música</span>
+</button>
+
+<div class="papel" aria-hidden="true"></div>
+
+<header class="hero">
+  <p class="date">Hoy, 29 de septiembre</p>
+  <h1>¡Feliz cumpleaños, <span id="nombre">Mamaaaa :D</span>!</h1>
+  <p class="lead">Hay un pastel, mucho de cariño y tres decisiones muy difíciles esperándote.</p>
+  <button id="cake" class="cake" aria-label="Toca el pastel para celebrar">
+    <span class="flame">🔥</span>
+    <span class="cake-emoji">🎂</span>
+  </button>
+  <p class="hint">Toca el pastel 👆</p>
+</header>
+
+<main>
+  <section class="cards-section" aria-labelledby="t1">
+    <h2 id="t1">Mensajes para ti</h2>
+    <p class="sub">Desliza y toca cada tarjeta para leerla. <span id="count">0</span>/6 abiertas</p>
+    <div class="track" id="track"></div>
+    <p id="finale" class="finale" hidden>💌 Las abriste todas… y aun así me quedó cariño por decirte. Te quiero muchísimo.</p>
+  </section>
+
+  <section class="dilema" aria-labelledby="t2">
+    <h2 id="t2">El dilema de los nacidos en septiembre</h2>
+    <p class="sub">Es tu cumpleaños pero ¿que debemos cantar? </p>
+    <div class="options">
+      <button class="opt" data-k="mananitas"><span>🎂</span>Cantar Las Mañanitas</button>
+      <button class="opt" data-k="viva"><span>🇲🇽</span>Gritar ¡Viva México!</button>
+      <button class="opt" data-k="alerta"><span>🔔</span>Es la Alerta Sísmica</button>
+    </div>
+    <p id="result" class="result" role="status">Elige con sabiduría… o al menos con rapidez.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Hecho con mucho amor para ti 💚🤍❤️</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
